@@ -30,7 +30,7 @@ def check(guess, ans):
 
 def generate_ans():
 	ans = random.sample(range(10), 4)
-	#print(ans)
+	# print(ans)
 	return ans
 
 
@@ -51,6 +51,7 @@ def check_input(g):
 	for digit in g:
 		if digit in seen_digits:
 			return False
+		seen_digits.add(digit)
 	return True
 
 main()
